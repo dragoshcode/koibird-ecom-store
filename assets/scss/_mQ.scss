@@ -72,6 +72,11 @@
     gap: 4rem;
   }
 
+  .best-sellers__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
   .yellow-jacket {
     margin-top: 0.6rem;
   }
@@ -89,10 +94,45 @@
   .new-in__paragraph {
     font-size: 1.4rem;
   }
+
+  .best-sellers__paragraph {
+    font-size: 1.4rem;
+  }
+
+  .best-sellers .line-left {
+    width: 77% !important;
+  }
+
+  .best-sellers .line-right {
+    width: 52.6% !important;
+  }
+
+  .best-sellers__wrapper {
+    margin-top: 6rem;
+  }
+
+  .pink-jacket {
+    margin-top: -2rem;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
+  .new-in {
+    padding-inline: 3rem;
+  }
+
+  .best-sellers {
+    padding-inline: 3rem;
+  }
+
   .new-in__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+    padding-inline: 4rem;
+  }
+
+  .best-sellers__wrapper {
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
     margin-top: 5rem;
@@ -124,6 +164,19 @@
     gap: 1rem;
     padding-inline: 3rem;
   }
+
+  .arrow-left,
+  .arrow-right {
+    display: block;
+  }
+
+  .best-sellers__wrapper {
+    margin-top: 9rem;
+  }
+
+  .pink-jacket {
+    margin-top: -2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -132,6 +185,10 @@
   }
 
   .new-in__card-image img {
+    width: 13rem !important;
+  }
+
+  .best-sellers__card-image img {
     width: 13rem !important;
   }
 
@@ -171,6 +228,22 @@
       font-size: 1rem;
     }
   }
+
+  .new-in {
+    padding-inline: 5rem;
+  }
+
+  .best-sellers {
+    padding-inline: 5rem;
+  }
+
+  .arrow-left {
+    left: 6% !important;
+  }
+
+  .arrow-right {
+    right: 6% !important;
+  }
 }
 
 @media only screen and (min-width: 1660px) {
@@ -184,6 +257,10 @@
   }
 
   .new-in__wrapper {
+    padding-inline: 7rem;
+  }
+
+  .best-sellers__wrapper {
     padding-inline: 7rem;
   }
 
@@ -208,5 +285,13 @@
   .presentation__card {
     width: 35rem;
     height: 35rem;
+  }
+
+  .arrow-left {
+    left: 8% !important;
+  }
+
+  .arrow-right {
+    right: 8% !important;
   }
 }
