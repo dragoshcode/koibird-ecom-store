@@ -1,1 +1,65 @@
-@use "variables" as v;
+@use 'variables' as v;
+
+@media only screen and (min-width: 700px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .header__topbar-actions-shop {
+    gap: 1.3rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .header {
+    padding: 2.5rem;
+    border-bottom: none;
+  }
+
+  .header__topbar-logo img {
+    width: 20rem;
+    margin-left: 3.5rem;
+  }
+
+  .header__topbar-actions-account {
+    display: flex;
+  }
+
+  .header__input {
+    display: none;
+  }
+  .header__topbar-actions-menu {
+    display: none;
+  }
+
+  .header__topbar-actions-shop {
+    gap: 1.4rem;
+  }
+
+  .header__topbar-input {
+    display: flex;
+  }
+
+  .header__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    ul {
+      gap: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header {
+    padding-inline: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1660px){
+    .header__topbar-logo img {
+        width: 30rem;
+        margin-left: 4rem;
+    }
+}

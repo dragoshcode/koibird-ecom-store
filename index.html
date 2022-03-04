@@ -15,23 +15,28 @@
 </head>
 
 <body>
-    <header class="flex-col">
+    <header class="header flex-col">
         <div class="header__topbar flex">
-            <div class="header__input flex">
+            <div class="header__topbar-input hidden">
                 <img src="./assets/images/search.png" alt="search">
                 <input type="text" name="" id="">
             </div>
-            <div class="header__logo">
+            <div class="header__topbar-logo">
                 <img src="/assets/images/black-logo.png" alt="logo">
             </div>
-            <div class="header__actions">
-                <div class="header__actions-shop">
+            <div class="header__topbar-actions flex">
+                <div class="header__topbar-actions-account hidden">
+                    <p>Register</p>
+                    <p>My account</p>
+                    <div class="line"></div>
+                </div>
+                <div class="header__topbar-actions-shop flex">
                     <img src="/assets/images/heart.png" alt="wishlist">
                     <img src="/assets/images/bag.png" alt="cart">
                 </div>
-                <div class="header__actions-menu">
-                    <i class='bx bx-menu-alt-right'></i>
-                    <ul class="hidden flex-col">
+                <div class="header__topbar-actions-menu">
+                    <i data-menu-button class='bx bx-menu-alt-right'></i>
+                    <ul data-menu class="hidden flex-col scale-up-ver-center">
                         <li>SHOP BY CATEGORY</li>
                         <li>SHOP BY BRAND</li>
                         <li>SHOP BY COLLECTION</li>
@@ -42,6 +47,10 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="header__input flex">
+            <img src="./assets/images/search.png" alt="search">
+            <input type="text" name="" id="">
         </div>
         <div class="header__links hidden">
             <ul class="flex">
