@@ -50,14 +50,93 @@
     }
   }
 
-  .hero{
-      margin-top: 0rem;
+  .hero {
+    margin-top: 0rem;
+  }
+
+  .shopping-now {
+    padding: 1.6rem;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .new-in__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .yellow-jacket {
+    margin-top: 0.6rem;
+  }
+
+  .line-left {
+    width: 87% !important;
+    top: 0.9rem !important;
+  }
+
+  .line-right {
+    width: 55.7% !important;
+    top: 0.9rem !important;
+  }
+
+  .new-in__paragraph {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .new-in__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+    padding-inline: 4rem;
+  }
+
+  .white-jacket {
+    margin-top: 0.65rem;
+  }
+
+  .yellow-jacket {
+    margin-top: 0;
+  }
+
+  .camo-jacket {
+    margin-top: -0.9rem;
+  }
+
+  .camouflage-jacket-paragraph {
+    width: 230px;
+  }
+  .wishlist {
+    top: -15% !important;
+    left: 100% !important;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .header {
     padding-inline: 5rem;
+  }
+
+  .new-in__card-image img {
+    width: 13rem !important;
+  }
+
+  .white-jacket {
+    margin-top: 1rem !important;
+  }
+
+  .yellow-jacket {
+    margin-top: -0.5rem !important;
+  }
+
+  .camo-jacket {
+    margin-top: -1.8rem !important;
+  }
+
+  .camouflage-jacket-paragraph {
+    width: unset;
   }
 }
 
@@ -70,6 +149,8 @@
     width: 30rem;
     margin-left: 4rem;
   }
+
+  .new-in__wrapper {
+    padding-inline: 7rem;
+  }
 }
-
-

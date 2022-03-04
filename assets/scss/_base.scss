@@ -112,3 +112,84 @@
 .hero {
   margin-top: 1rem;
 }
+
+.shopping-now {
+  background-color: v.$lime;
+  justify-content: center;
+  padding: 1rem;
+  p {
+    font-weight: 700;
+  }
+}
+
+.new-in {
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
+  .line-left {
+    position: absolute;
+    background-color: v.$lime;
+    width: 70%;
+    height: 0.1rem;
+    top: 0.6rem;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  .line-right {
+    position: absolute;
+    background-color: v.$lime;
+    width: 51%;
+    height: 0.1rem;
+    top: 0.6rem;
+    right: -40%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__wrapper {
+    margin-top: 2.5rem;
+    gap: 2.35rem;
+    .new-in__card {
+      .wishlist {
+        width: 1rem;
+        position: absolute;
+        top: 60%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+      img {
+        width: 9rem;
+      }
+      &-data {
+        margin-top: 1.5rem;
+        gap: 0.25rem;
+        position: relative;
+        max-width: 550px;
+        margin-inline: auto;
+        .jacket {
+          letter-spacing: 0.2rem;
+        }
+        .manufacturer {
+          color: #777;
+          margin-top: 0.3rem;
+        }
+        .button {
+          position: relative;
+          button {
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 0.3rem;
+          }
+          .underline {
+            position: absolute;
+            width: 4.5rem;
+            height: 0.1rem;
+            background-color: v.$lime;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}

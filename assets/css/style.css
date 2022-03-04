@@ -182,6 +182,84 @@ button {
   margin-top: 1rem;
 }
 
+.shopping-now {
+  background-color: #E0FF04;
+  justify-content: center;
+  padding: 1rem;
+}
+.shopping-now p {
+  font-weight: 700;
+}
+
+.new-in {
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
+}
+.new-in .line-left {
+  position: absolute;
+  background-color: #E0FF04;
+  width: 70%;
+  height: 0.1rem;
+  top: 0.6rem;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.new-in .line-right {
+  position: absolute;
+  background-color: #E0FF04;
+  width: 51%;
+  height: 0.1rem;
+  top: 0.6rem;
+  right: -40%;
+  transform: translate(-50%, -50%);
+}
+.new-in__wrapper {
+  margin-top: 2.5rem;
+  gap: 2.35rem;
+}
+.new-in__wrapper .new-in__card .wishlist {
+  width: 1rem;
+  position: absolute;
+  top: 60%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.new-in__wrapper .new-in__card img {
+  width: 9rem;
+}
+.new-in__wrapper .new-in__card-data {
+  margin-top: 1.5rem;
+  gap: 0.25rem;
+  position: relative;
+  max-width: 550px;
+  margin-inline: auto;
+}
+.new-in__wrapper .new-in__card-data .jacket {
+  letter-spacing: 0.2rem;
+}
+.new-in__wrapper .new-in__card-data .manufacturer {
+  color: #777;
+  margin-top: 0.3rem;
+}
+.new-in__wrapper .new-in__card-data .button {
+  position: relative;
+}
+.new-in__wrapper .new-in__card-data .button button {
+  font-family: "Work Sans", sans-serif;
+  margin-top: 0.3rem;
+}
+.new-in__wrapper .new-in__card-data .button .underline {
+  position: absolute;
+  width: 4.5rem;
+  height: 0.1rem;
+  background-color: #E0FF04;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 2rem;
@@ -235,10 +313,89 @@ button {
   .hero {
     margin-top: 0rem;
   }
+
+  .shopping-now {
+    padding: 1.6rem;
+  }
+  .shopping-now p {
+    font-size: 1.3rem;
+  }
+
+  .new-in__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .yellow-jacket {
+    margin-top: 0.6rem;
+  }
+
+  .line-left {
+    width: 87% !important;
+    top: 0.9rem !important;
+  }
+
+  .line-right {
+    width: 55.7% !important;
+    top: 0.9rem !important;
+  }
+
+  .new-in__paragraph {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  .new-in__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+    padding-inline: 4rem;
+  }
+
+  .white-jacket {
+    margin-top: 0.65rem;
+  }
+
+  .yellow-jacket {
+    margin-top: 0;
+  }
+
+  .camo-jacket {
+    margin-top: -0.9rem;
+  }
+
+  .camouflage-jacket-paragraph {
+    width: 230px;
+  }
+
+  .wishlist {
+    top: -15% !important;
+    left: 100% !important;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .header {
     padding-inline: 5rem;
+  }
+
+  .new-in__card-image img {
+    width: 13rem !important;
+  }
+
+  .white-jacket {
+    margin-top: 1rem !important;
+  }
+
+  .yellow-jacket {
+    margin-top: -0.5rem !important;
+  }
+
+  .camo-jacket {
+    margin-top: -1.8rem !important;
+  }
+
+  .camouflage-jacket-paragraph {
+    width: unset;
   }
 }
 @media only screen and (min-width: 1660px) {
@@ -249,5 +406,9 @@ button {
   .header__topbar-logo img {
     width: 30rem;
     margin-left: 4rem;
+  }
+
+  .new-in__wrapper {
+    padding-inline: 7rem;
   }
 }
