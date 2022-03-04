@@ -178,6 +178,10 @@ button {
   cursor: pointer;
 }
 
+.hero {
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 2rem;
@@ -227,6 +231,10 @@ button {
   .header__links ul {
     gap: 1rem;
   }
+
+  .hero {
+    margin-top: 0rem;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .header {
@@ -234,6 +242,10 @@ button {
   }
 }
 @media only screen and (min-width: 1660px) {
+  .header {
+    padding-inline: 9.7rem;
+  }
+
   .header__topbar-logo img {
     width: 30rem;
     margin-left: 4rem;
