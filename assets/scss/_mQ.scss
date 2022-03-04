@@ -11,6 +11,12 @@
   }
 }
 
+@media only screen and (min-width: 834px) {
+  .presentation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (min-width: 970px) {
   .header {
     padding: 2.5rem;
@@ -112,6 +118,12 @@
     top: -15% !important;
     left: 100% !important;
   }
+
+  .presentation {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-inline: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -138,6 +150,27 @@
   .camouflage-jacket-paragraph {
     width: unset;
   }
+
+  .line-right {
+    width: 57% !important;
+  }
+
+  .line-left {
+    width: 90.7% !important;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .presentation__card {
+    width: 26rem;
+    height: 26rem;
+    h2 {
+      font-size: 2rem;
+    }
+    &-button button {
+      font-size: 1rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1660px) {
@@ -152,5 +185,28 @@
 
   .new-in__wrapper {
     padding-inline: 7rem;
+  }
+
+  .presentation {
+    padding-inline: 8rem;
+  }
+
+  .presentation__card {
+    width: 29rem;
+    height: 29rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .presentation__card {
+    width: 32rem;
+    height: 32rem;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .presentation__card {
+    width: 35rem;
+    height: 35rem;
   }
 }
