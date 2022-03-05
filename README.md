@@ -2,12 +2,17 @@
 
 ![preview](/assets/images/readme-logo.png)</h1>
 
+## 🎯Links
+
+Watch it in action [here](https://koibird-crisp-dragosh.netlify.app)
+
 ## ✨ Built With
 
 - HTML
 - SCSS
 - JavaScript
 - Others: Gulp, BrowserSync
+- Naming Convention: BEM
 
 ## 📌 Details
 
