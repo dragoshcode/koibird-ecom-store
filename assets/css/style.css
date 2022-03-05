@@ -124,6 +124,10 @@ button {
 }
 .header__topbar-actions-account p {
   cursor: pointer;
+  transition: 0.2s;
+}
+.header__topbar-actions-account p:hover {
+  opacity: 0.5;
 }
 .header__topbar-actions-account .line {
   position: absolute;
@@ -186,6 +190,10 @@ button {
 }
 .header__links ul li {
   cursor: pointer;
+  transition: 0.2s;
+}
+.header__links ul li:hover {
+  opacity: 0.5;
 }
 
 .hero {
@@ -280,6 +288,10 @@ button {
 }
 .new-in__wrapper .new-in__card-data .button {
   position: relative;
+  transition: 0.2s;
+}
+.new-in__wrapper .new-in__card-data .button:hover {
+  opacity: 0.5;
 }
 .new-in__wrapper .new-in__card-data .button button {
   font-family: "Work Sans", sans-serif;
@@ -382,6 +394,10 @@ button {
   padding: 0.3rem 0;
   z-index: 6;
   margin-top: 0.3rem;
+  transition: 0.2s;
+}
+.presentation__card-button:hover {
+  opacity: 0.5;
 }
 .presentation__card-button button {
   color: white;
@@ -454,6 +470,10 @@ button {
 }
 .best-sellers__wrapper .best-sellers__card-data .button {
   position: relative;
+  transition: 0.2s;
+}
+.best-sellers__wrapper .best-sellers__card-data .button:hover {
+  opacity: 0.5;
 }
 .best-sellers__wrapper .best-sellers__card-data .button button {
   font-family: "Work Sans", sans-serif;
@@ -510,6 +530,10 @@ button {
 .footer__data-links a {
   color: black;
   font-size: 1.1rem;
+  transition: 0.2s;
+}
+.footer__data-links a:hover {
+  opacity: 0.5;
 }
 .footer__newsletter {
   gap: 1.5rem;
@@ -536,6 +560,10 @@ button {
   display: flex;
   justify-content: start;
   font-size: 1rem;
+  transition: 0.2s;
+}
+.footer__newsletter button:hover {
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 700px) {
@@ -701,11 +729,11 @@ button {
   }
 
   .best-sellers .line-left {
-    width: 77% !important;
+    width: 84% !important;
   }
 
   .best-sellers .line-right {
-    width: 52.6% !important;
+    width: 55% !important;
   }
 
   .best-sellers__wrapper {
@@ -856,6 +884,10 @@ button {
   }
 }
 @media only screen and (min-width: 1360px) {
+  .header__topbar-logo img {
+    margin-left: 4rem;
+  }
+
   .presentation__card {
     width: 26rem;
     height: 26rem;
@@ -952,6 +984,15 @@ button {
     font-size: 2.5rem;
     padding: 0.4rem 4.5rem;
     padding-left: 5.3rem;
+  }
+
+  .dropdown {
+    left: 18.5rem !important;
+  }
+
+  .hidden-element {
+    width: 14.5rem !important;
+    left: 17rem !important;
   }
 }
 @media only screen and (min-width: 1900px) {

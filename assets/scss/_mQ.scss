@@ -44,8 +44,8 @@
     margin-left: 3.5rem;
   }
 
-  .search-icon{
-      display: none;
+  .search-icon {
+    display: none;
   }
 
   .header__topbar-actions-account {
@@ -166,11 +166,11 @@
   }
 
   .best-sellers .line-left {
-    width: 77% !important;
+    width: 84% !important;
   }
 
   .best-sellers .line-right {
-    width: 52.6% !important;
+    width: 55% !important;
   }
 
   .best-sellers__wrapper {
@@ -327,6 +327,10 @@
 }
 
 @media only screen and (min-width: 1360px) {
+  .header__topbar-logo img {
+    margin-left: 4rem;
+  }
+
   .presentation__card {
     width: 26rem;
     height: 26rem;
@@ -431,6 +435,15 @@
       padding: 0.4rem 4.5rem;
       padding-left: 5.3rem;
     }
+  }
+
+  .dropdown {
+    left: 18.5rem !important;
+  }
+
+  .hidden-element {
+    width: 14.5rem !important;
+    left: 17rem !important;
   }
 }
 
