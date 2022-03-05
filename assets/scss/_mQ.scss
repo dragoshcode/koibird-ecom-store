@@ -44,6 +44,10 @@
     margin-left: 3.5rem;
   }
 
+  .search-icon{
+      display: none;
+  }
+
   .header__topbar-actions-account {
     display: flex;
   }
@@ -69,6 +73,52 @@
     margin-top: 2rem;
     ul {
       gap: 1rem;
+      position: relative;
+
+      .hidden-element {
+        width: 10.5rem;
+        height: 4rem;
+        position: absolute;
+        top: 0.7rem;
+        left: 14rem;
+        opacity: 0;
+      }
+      .dropdown {
+        position: absolute;
+        top: 3.6rem;
+        left: 11.5rem;
+        z-index: 9;
+        background-color: white;
+        box-shadow: 3px 2px 0px 3px rgba(0, 0, 0, 0.09);
+        padding: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        p {
+          position: relative;
+          cursor: pointer;
+        }
+        p::after {
+          content: '';
+          position: absolute;
+          width: 9.5rem;
+          height: 0.3rem;
+          background-color: v.$lime;
+          top: 132%;
+          left: 49%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s ease-in-out;
+          opacity: 0;
+        }
+        p:hover::after {
+          opacity: 1;
+        }
+        .col-1 {
+          gap: 1.3rem;
+        }
+        .col-2 {
+          gap: 1.3rem;
+        }
+      }
     }
   }
 
@@ -224,7 +274,7 @@
   }
 
   .hero {
-    background-image: url(../images/hero-desktop.png);
+    background-image: url(../images/hero-desktop-clean.png);
   }
 
   .new-in__card-image img {
@@ -320,6 +370,10 @@
       }
     }
   }
+
+  .hero__data {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1660px) {
@@ -392,5 +446,8 @@
 
   .arrow-right {
     right: 8% !important;
+  }
+  .hero__data {
+    left: 82%;
   }
 }

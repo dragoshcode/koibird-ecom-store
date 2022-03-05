@@ -15,311 +15,343 @@
 </head>
 
 <body>
-    <header class="header flex-col">
-        <div class="header__topbar flex">
-            <div class="header__topbar-input hidden">
+    <div class="overflow-hidden">
+        <header class="header flex-col">
+            <div class="header__topbar flex">
+                <div class="header__topbar-input hidden">
+                    <img src="./assets/images/search.png" alt="search">
+                    <input type="text" name="" id="">
+                </div>
+                <div class="header__topbar-logo">
+                    <img src="/assets/images/black-logo.png" alt="logo">
+                </div>
+                <div class="header__topbar-actions flex">
+                    <div class="header__topbar-actions-account hidden">
+                        <p>Register</p>
+                        <p>My account</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="header__topbar-actions-shop flex">
+                        <img data-search-button class="search-icon" src="./assets/images/search.png" alt="search">
+                        <img src="/assets/images/heart.png" alt="wishlist">
+                        <img src="/assets/images/bag.png" alt="cart">
+                    </div>
+                    <div class="header__topbar-actions-menu">
+                        <i data-menu-button class='bx bx-menu-alt-right'></i>
+                        <ul data-menu class="hidden flex-col scale-up-ver-center">
+                            <li>SHOP BY CATEGORY</li>
+                            <li>SHOP BY BRAND</li>
+                            <li>SHOP BY COLLECTION</li>
+                            <li>ABOUT KOIBIRD</li>
+                            <li>POP-UP SHOP</li>
+                            <li>Register</li>
+                            <li>My account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-input class="header__input hidden">
                 <img src="./assets/images/search.png" alt="search">
                 <input type="text" name="" id="">
             </div>
-            <div class="header__topbar-logo">
-                <img src="/assets/images/black-logo.png" alt="logo">
-            </div>
-            <div class="header__topbar-actions flex">
-                <div class="header__topbar-actions-account hidden">
-                    <p>Register</p>
-                    <p>My account</p>
-                    <div class="line"></div>
-                </div>
-                <div class="header__topbar-actions-shop flex">
-                    <img src="/assets/images/heart.png" alt="wishlist">
-                    <img src="/assets/images/bag.png" alt="cart">
-                </div>
-                <div class="header__topbar-actions-menu">
-                    <i data-menu-button class='bx bx-menu-alt-right'></i>
-                    <ul data-menu class="hidden flex-col scale-up-ver-center">
-                        <li>SHOP BY CATEGORY</li>
-                        <li>SHOP BY BRAND</li>
-                        <li>SHOP BY COLLECTION</li>
-                        <li>ABOUT KOIBIRD</li>
-                        <li>POP-UP SHOP</li>
-                        <li>Register</li>
-                        <li>My account</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header__input flex">
-            <img src="./assets/images/search.png" alt="search">
-            <input type="text" name="" id="">
-        </div>
-        <div class="header__links hidden">
-            <ul class="flex">
-                <li>SHOP BY CATEGORY</li>
-                <li>SHOP BY BRAND</li>
-                <li>SHOP BY COLLECTION</li>
-                <li>ABOUT KOIBIRD</li>
-                <li>POP-UP SHOP</li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero flex">
-            <!-- <p>BEAUTY AND THE PISTE</p>
-            <img src="./assets/images/green-arrow.png" alt="arrow"> -->
-        </section>
-
-        <section class="shopping-now flex">
-            <p>WHAT WE ARE SHOPPING NOW</p>
-        </section>
-
-        <section class="new-in">
-            <div class="arrow-left hidden">
-                <img src="./assets/images/left-arrow.png" alt="left arrow">
-            </div>
-            <div class="arrow-right hidden">
-                <img src="./assets/images/right-arrow.png" alt="right arrow">
-            </div>
-            <div class="line-left"></div>
-            <p class="new-in__paragraph">NEW IN</p>
-            <div class="line-right"></div>
-            <div class="new-in__wrapper grid">
-                <div class="new-in__card">
-                    <div class="new-in__card-image">
-                        <img src="./assets/images/black-jacket.png" alt="black jacket">
-                    </div>
-                    <div class="new-in__card-data flex-col">
-                        <p class="jacket">BLACK JACKET</p>
-                        <p class="manufacturer">Gucci</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+            <div class="header__links hidden">
+                <ul class="flex">
+                    <li>SHOP BY CATEGORY</li>
+                    <li data-brand>SHOP BY BRAND</li>
+                    <li>SHOP BY COLLECTION</li>
+                    <li>ABOUT KOIBIRD</li>
+                    <li>POP-UP SHOP</li>
+                    <div data-hidden class="hidden-element"></div>
+                    <div data-dropdown class="dropdown hidden">
+                        <div class="col-1 flex-col">
+                            <p>ANNANIKI</p>
+                            <p>ANNE WEST</p>
+                            <p>BACON CLOTHING</p>
+                            <p>BLACK CROWS</p>
+                            <p>BLANCHA</p>
+                            <p>CANCELLATO</p>
+                            <p>CORDOVA</p>
+                            <p>FUSALP</p>
+                            <p>I LOVE MR MITTENS</p>
+                            <p>IENKI IENKI</p>
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
-                    </div>
-
-                </div>
-                <div class="new-in__card white-jacket">
-                    <div class="new-in__card-image">
-                        <img src="./assets/images/white-jacket.png" alt="black jacket">
-                    </div>
-                    <div class="new-in__card-data flex-col">
-                        <p class="jacket">WHITE JACKET</p>
-                        <p class="manufacturer">Bacon Clothing</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                        <div class="col-2 flex-col">
+                            <p>LE KILT</p>
+                            <p>LINGUA FRANCA</p>
+                            <p>MORPHO AND LUNA</p>
+                            <p>NASTAHA ZINKO</p>
+                            <p>PERFECT MOMENT</p>
+                            <p>SPENCER VLADIMIR</p>
+                            <p>STAND</p>
+                            <p>WILD AND WOOLLY</p>
+                            <p>WOOLY BOOLY</p>
+                            <p>BLACK CROWS</p>
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
                     </div>
+                </ul>
+            </div>
+        </header>
 
+        <main>
+            <section class="hero flex">
+                <div class="hero__data hidden">
+                    <p>BEAUTY AND THE PISTE</p>
+                    <img src="./assets/images/green-arrow.png" alt="arrow">
                 </div>
-                <div class="new-in__card yellow-jacket">
-                    <div class="new-in__card-image">
-                        <img src="./assets/images/yellow-jacket.png" alt="black jacket">
-                    </div>
-                    <div class="new-in__card-data flex-col">
-                        <p class="jacket">YELLOW JACKET</p>
-                        <p class="manufacturer">Annakiki</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+            </section>
+
+            <section class="shopping-now flex">
+                <p>WHAT WE ARE SHOPPING NOW</p>
+            </section>
+
+            <section class="new-in">
+                <div class="arrow-left hidden">
+                    <img src="./assets/images/left-arrow.png" alt="left arrow">
+                </div>
+                <div class="arrow-right hidden">
+                    <img src="./assets/images/right-arrow.png" alt="right arrow">
+                </div>
+                <div class="line-left"></div>
+                <p class="new-in__paragraph">NEW IN</p>
+                <div class="line-right"></div>
+                <div class="new-in__wrapper grid">
+                    <div class="new-in__card">
+                        <div class="new-in__card-image">
+                            <img src="./assets/images/black-jacket.png" alt="black jacket">
                         </div>
-                        <img class="wishlist" src="./assets/images/green-heart.png" alt="wishlist">
-                    </div>
-
-                </div>
-                <div class="new-in__card camo-jacket">
-                    <div class="new-in__card-image">
-                        <img src="./assets/images/camo-jacket.png" alt="black jacket">
-                    </div>
-                    <div class="new-in__card-data flex-col">
-                        <p class="jacket camouflage-jacket-paragraph">CAMOUFLAGE JACKET</p>
-                        <p class="manufacturer">Black Crows</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                        <div class="new-in__card-data flex-col">
+                            <p class="jacket">BLACK JACKET</p>
+                            <p class="manufacturer">Gucci</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="presentation grid">
-            <div class="presentation__card outerwear flex-col">
-                <h2>OUTERWEAR</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-            <div class="presentation__card skis flex-col">
-                <h2>SKIS</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-            <div class="presentation__card knitwear flex-col">
-                <h2>KNITWEAR</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-            <div class="presentation__card accessories flex-col">
-                <h2>ACCESSORIES</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-            <div class="presentation__card goggles flex-col">
-                <h2>GOGGLES</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-            <div class="presentation__card jackets flex-col">
-                <h2>JACKETS</h2>
-                <div class="presentation__card-button flex">
-                    <button>SHOP NOW</button>
-                    <img src="./assets/images/white-arrow.png" alt="arrow">
-                </div>
-            </div>
-        </section>
-
-        <section class="best-sellers">
-            <div class="arrow-left hidden">
-                <img src="./assets/images/left-arrow.png" alt="left arrow">
-            </div>
-            <div class="arrow-right hidden">
-                <img src="./assets/images/right-arrow.png" alt="right arrow">
-            </div>
-            <div class="line-left"></div>
-            <p class="best-sellers__paragraph">BEST SELLERS</p>
-            <div class="line-right"></div>
-            <div class="best-sellers__wrapper grid">
-                <div class="best-sellers__card pink-jacket">
-                    <div class="best-sellers__card-image">
-                        <img src="./assets/images/pink-jacket.png" alt="black jacket">
                     </div>
-                    <div class="best-sellers__card-data flex-col">
-                        <p class="jacket">PINK JACKET</p>
-                        <p class="manufacturer">Gucci</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                    <div class="new-in__card white-jacket">
+                        <div class="new-in__card-image">
+                            <img src="./assets/images/white-jacket.png" alt="black jacket">
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
-                    </div>
-
-                </div>
-                <div class="best-sellers__card">
-                    <div class="best-sellers__card-image">
-                        <img src="./assets/images/pink-hat.png" alt="black jacket">
-                    </div>
-                    <div class="best-sellers__card-data flex-col">
-                        <p class="jacket">PINK KNIT BEANIE</p>
-                        <p class="manufacturer">Bacon Clothing</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                        <div class="new-in__card-data flex-col">
+                            <p class="jacket">WHITE JACKET</p>
+                            <p class="manufacturer">Bacon Clothing</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
-                    </div>
 
-                </div>
-                <div class="best-sellers__card">
-                    <div class="best-sellers__card-image">
-                        <img src="./assets/images/gold-gloves.png" alt="black jacket">
                     </div>
-                    <div class="best-sellers__card-data flex-col">
-                        <p class="jacket">GOLD GLOVES</p>
-                        <p class="manufacturer">Annakiki</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                    <div class="new-in__card yellow-jacket">
+                        <div class="new-in__card-image">
+                            <img src="./assets/images/yellow-jacket.png" alt="black jacket">
                         </div>
-                        <img class="wishlist" src="./assets/images/green-heart.png" alt="wishlist">
-                    </div>
-
-                </div>
-                <div class="best-sellers__card">
-                    <div class="best-sellers__card-image">
-                        <img src="./assets/images/handbag.png" alt="black jacket">
-                    </div>
-                    <div class="best-sellers__card-data flex-col">
-                        <p class="jacket camouflage-jacket-paragraph">CREAM HANDBAG</p>
-                        <p class="manufacturer">Black Crows</p>
-                        <p class="price">£000</p>
-                        <div class="button">
-                            <button>SHOP NOW</button>
-                            <div class="underline"></div>
+                        <div class="new-in__card-data flex-col">
+                            <p class="jacket">YELLOW JACKET</p>
+                            <p class="manufacturer">Annakiki</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/green-heart.png" alt="wishlist">
                         </div>
-                        <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
+
+                    </div>
+                    <div class="new-in__card camo-jacket">
+                        <div class="new-in__card-image">
+                            <img src="./assets/images/camo-jacket.png" alt="black jacket">
+                        </div>
+                        <div class="new-in__card-data flex-col">
+                            <p class="jacket camouflage-jacket-paragraph">CAMOUFLAGE JACKET</p>
+                            <p class="manufacturer">Black Crows</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="koiski grid">
-            <img src="./assets/images/koiski-1.png" alt="koiski">
-            <img src="./assets/images/koiski-2.png" alt="koiski">
-            <img src="./assets/images/koiski-3.png" alt="koiski">
-            <img src="./assets/images/koiski-4.png" alt="koiski">
-            <img src="./assets/images/koiski-5.png" alt="koiski">
-            <img src="./assets/images/koiski-6.png" alt="koiski">
-            <img src="./assets/images/koiski-7.png" alt="koiski">
-            <img src="./assets/images/koiski-8.png" alt="koiski">
-            <img src="./assets/images/koiski-9.png" alt="koiski">
-            <img src="./assets/images/koiski-10.png" alt="koiski">
-            <img src="./assets/images/koiski-11.png" alt="koiski">
-            <img src="./assets/images/koiski-12.png" alt="koiski">
-            <p>#KOISKI</p>
-        </section>
-    </main>
+            <section class="presentation grid">
+                <div class="presentation__card outerwear flex-col">
+                    <h2>OUTERWEAR</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="presentation__card skis flex-col">
+                    <h2>SKIS</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="presentation__card knitwear flex-col">
+                    <h2>KNITWEAR</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="presentation__card accessories flex-col">
+                    <h2>ACCESSORIES</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="presentation__card goggles flex-col">
+                    <h2>GOGGLES</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="presentation__card jackets flex-col">
+                    <h2>JACKETS</h2>
+                    <div class="presentation__card-button flex">
+                        <button>SHOP NOW</button>
+                        <img src="./assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </section>
 
-    <footer class="footer grid">
-        <div class="footer__data flex-col">
-            <div class="footer__data-logo">
-                <img src="./assets/images/black-logo.png" alt="logo">
+            <section class="best-sellers">
+                <div class="arrow-left hidden">
+                    <img src="./assets/images/left-arrow.png" alt="left arrow">
+                </div>
+                <div class="arrow-right hidden">
+                    <img src="./assets/images/right-arrow.png" alt="right arrow">
+                </div>
+                <div class="line-left"></div>
+                <p class="best-sellers__paragraph">BEST SELLERS</p>
+                <div class="line-right"></div>
+                <div class="best-sellers__wrapper grid">
+                    <div class="best-sellers__card pink-jacket">
+                        <div class="best-sellers__card-image">
+                            <img src="./assets/images/pink-jacket.png" alt="black jacket">
+                        </div>
+                        <div class="best-sellers__card-data flex-col">
+                            <p class="jacket">PINK JACKET</p>
+                            <p class="manufacturer">Gucci</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
+                        </div>
+
+                    </div>
+                    <div class="best-sellers__card">
+                        <div class="best-sellers__card-image">
+                            <img src="./assets/images/pink-hat.png" alt="black jacket">
+                        </div>
+                        <div class="best-sellers__card-data flex-col">
+                            <p class="jacket">PINK KNIT BEANIE</p>
+                            <p class="manufacturer">Bacon Clothing</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
+                        </div>
+
+                    </div>
+                    <div class="best-sellers__card">
+                        <div class="best-sellers__card-image">
+                            <img src="./assets/images/gold-gloves.png" alt="black jacket">
+                        </div>
+                        <div class="best-sellers__card-data flex-col">
+                            <p class="jacket">GOLD GLOVES</p>
+                            <p class="manufacturer">Annakiki</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/green-heart.png" alt="wishlist">
+                        </div>
+
+                    </div>
+                    <div class="best-sellers__card">
+                        <div class="best-sellers__card-image">
+                            <img src="./assets/images/handbag.png" alt="black jacket">
+                        </div>
+                        <div class="best-sellers__card-data flex-col">
+                            <p class="jacket camouflage-jacket-paragraph">CREAM HANDBAG</p>
+                            <p class="manufacturer">Black Crows</p>
+                            <p class="price">£000</p>
+                            <div class="button">
+                                <button>SHOP NOW</button>
+                                <div class="underline"></div>
+                            </div>
+                            <img class="wishlist" src="./assets/images/heart.png" alt="wishlist">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="koiski grid">
+                <img src="./assets/images/koiski-1.png" alt="koiski">
+                <img src="./assets/images/koiski-2.png" alt="koiski">
+                <img src="./assets/images/koiski-3.png" alt="koiski">
+                <img src="./assets/images/koiski-4.png" alt="koiski">
+                <img src="./assets/images/koiski-5.png" alt="koiski">
+                <img src="./assets/images/koiski-6.png" alt="koiski">
+                <img src="./assets/images/koiski-7.png" alt="koiski">
+                <img src="./assets/images/koiski-8.png" alt="koiski">
+                <img src="./assets/images/koiski-9.png" alt="koiski">
+                <img src="./assets/images/koiski-10.png" alt="koiski">
+                <img src="./assets/images/koiski-11.png" alt="koiski">
+                <img src="./assets/images/koiski-12.png" alt="koiski">
+                <p>#KOISKI</p>
+            </section>
+        </main>
+
+        <footer class="footer grid">
+            <div class="footer__data flex-col">
+                <div class="footer__data-logo">
+                    <img src="./assets/images/black-logo.png" alt="logo">
+                </div>
+                <div class="footer__data-links flex-col">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        ABOUT
+                    </a>
+                    <a href="#" class="terms" target="_blank" rel="noopener noreferrer">
+                        TERMS & CONDITIONS
+                    </a>
+                    <a href="#" class="policy" target="_blank" rel="noopener noreferrer">
+                        PRIVACY POLICY
+                    </a>
+                    <a href="#" class="contact" target="_blank" rel="noopener noreferrer">
+                        CONTACT US
+                    </a>
+                </div>
             </div>
-            <div class="footer__data-links flex-col">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    ABOUT
-                </a>
-                <a href="#" class="terms" target="_blank" rel="noopener noreferrer">
-                    TERMS & CONDITIONS
-                </a>
-                <a href="#" class="policy" target="_blank" rel="noopener noreferrer">
-                    PRIVACY POLICY
-                </a>
-                <a href="#" class="contact" target="_blank" rel="noopener noreferrer">
-                    CONTACT US
-                </a>
+            <div class="footer__newsletter flex-col">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <input type="email" name="" id="">
+                <div class="footer__newsletter-checkbox flex">
+                    <input type="checkbox" name="" id="">
+                    <p>GDPR tick box</p>
+                </div>
+                <button>SUBMIT ></button>
             </div>
-        </div>
-        <div class="footer__newsletter flex-col">
-            <p>SIGN UP FOR OUR NEWSLETTER</p>
-            <input type="email" name="" id="">
-            <div class="footer__newsletter-checkbox flex">
-                <input type="checkbox" name="" id="">
-                <p>GDPR tick box</p>
-            </div>
-            <button>SUBMIT ></button>
-        </div>
-        </div>
+    </div>
     </footer>
+    </div>
 </body>
 
 </html>
