@@ -9,11 +9,23 @@
     gap: 1.3rem;
     margin-right: 1rem;
   }
+
+  .koiski {
+    grid-template-columns: repeat(3, 1fr);
+
+    p {
+      font-size: 4rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 834px) {
   .presentation {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    background-image: url(../images/hero-tablet.png);
   }
 }
 
@@ -114,6 +126,10 @@
   .pink-jacket {
     margin-top: -2rem;
   }
+
+  .koiski {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1120px) {
@@ -177,11 +193,28 @@
   .pink-jacket {
     margin-top: -2.5rem;
   }
+
+  .koiski {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.65rem;
+    img {
+      width: 100%;
+    }
+    p {
+      top: 50%;
+      font-size: 1.85rem;
+      padding: 0.4rem 2.85rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .header {
     padding-inline: 5rem;
+  }
+
+  .hero {
+    background-image: url(../images/hero-desktop.png);
   }
 
   .new-in__card-image img {
@@ -278,6 +311,15 @@
   .presentation__card {
     width: 32rem;
     height: 32rem;
+  }
+
+  .koiski {
+    gap: 0.75rem;
+    p {
+      font-size: 2.5rem;
+      padding: 0.4rem 4.5rem;
+      padding-left: 5.3rem;
+    }
   }
 }
 
