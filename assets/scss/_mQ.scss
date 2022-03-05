@@ -17,6 +17,10 @@
       font-size: 4rem;
     }
   }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 834px) {
@@ -206,6 +210,12 @@
       padding: 0.4rem 2.85rem;
     }
   }
+
+  .footer {
+    &__data {
+      justify-content: center;
+    }
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -248,6 +258,22 @@
   .line-left {
     width: 90.7% !important;
   }
+
+  .footer {
+    padding-inline: 3rem;
+
+    &__data {
+      gap: 2.5rem;
+    }
+
+    &__newsletter {
+      gap: 0.9rem;
+    }
+  }
+
+  .footer__data-links {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1360px) {
@@ -277,6 +303,23 @@
   .arrow-right {
     right: 6% !important;
   }
+
+  .footer {
+    gap: 15rem !important;
+    margin-top: 3.1rem;
+
+    &__data-links {
+      .terms {
+        width: 200px;
+      }
+      .policy {
+        width: 170px;
+      }
+      .contact {
+        width: 160px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1660px) {
@@ -304,6 +347,20 @@
   .presentation__card {
     width: 29rem;
     height: 29rem;
+  }
+
+  .footer {
+    padding-inline: 10rem;
+    gap: 24.5rem !important;
+
+    &__data {
+      gap: 3rem;
+    }
+    &__newsletter {
+      input[type='email'] {
+        width: 100%;
+      }
+    }
   }
 }
 

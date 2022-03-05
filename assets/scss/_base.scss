@@ -392,7 +392,7 @@
   margin-top: 8rem;
   gap: 1.5rem;
   position: relative;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   img {
     width: 90%;
     margin-inline: auto;
@@ -407,5 +407,54 @@
     font-size: 3rem;
     padding: 0.5rem 2.3rem;
     border-radius: 0.2rem;
+  }
+}
+
+.footer {
+  background-color: v.$lime;
+  margin-top: 5rem;
+  text-align: left;
+  padding: 2rem;
+  gap: 4rem;
+
+  &__data {
+    gap: 1.5rem;
+    &-logo img {
+      width: 12rem;
+    }
+    &-links {
+      gap: 1rem;
+      a {
+        color: black;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__newsletter {
+    gap: 1.5rem;
+    p {
+      padding-right: 1rem;
+    }
+    input[type='email'] {
+      border: none;
+      outline: none;
+      padding: 0.75rem 1.2rem;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1rem;
+    }
+    &-checkbox {
+      gap: 0.5rem;
+      input {
+        outline: none;
+        border: none;
+      }
+    }
+    button {
+      font-family: 'Work Sans', sans-serif;
+      display: flex;
+      justify-content: start;
+      font-size: 1rem;
+    }
   }
 }

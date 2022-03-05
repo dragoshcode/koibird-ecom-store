@@ -472,6 +472,53 @@ button {
   border-radius: 0.2rem;
 }
 
+.footer {
+  background-color: #E0FF04;
+  margin-top: 5rem;
+  text-align: left;
+  padding: 2rem;
+  gap: 4rem;
+}
+.footer__data {
+  gap: 1.5rem;
+}
+.footer__data-logo img {
+  width: 12rem;
+}
+.footer__data-links {
+  gap: 1rem;
+}
+.footer__data-links a {
+  color: black;
+  font-size: 1.1rem;
+}
+.footer__newsletter {
+  gap: 1.5rem;
+}
+.footer__newsletter p {
+  padding-right: 1rem;
+}
+.footer__newsletter input[type=email] {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+}
+.footer__newsletter-checkbox {
+  gap: 0.5rem;
+}
+.footer__newsletter-checkbox input {
+  outline: none;
+  border: none;
+}
+.footer__newsletter button {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: start;
+  font-size: 1rem;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 2rem;
@@ -487,6 +534,10 @@ button {
   }
   .koiski p {
     font-size: 4rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 834px) {
@@ -676,6 +727,10 @@ button {
     font-size: 1.85rem;
     padding: 0.4rem 2.85rem;
   }
+
+  .footer__data {
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .header {
@@ -717,6 +772,20 @@ button {
   .line-left {
     width: 90.7% !important;
   }
+
+  .footer {
+    padding-inline: 3rem;
+  }
+  .footer__data {
+    gap: 2.5rem;
+  }
+  .footer__newsletter {
+    gap: 0.9rem;
+  }
+
+  .footer__data-links {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 1360px) {
   .presentation__card {
@@ -745,6 +814,20 @@ button {
   .arrow-right {
     right: 6% !important;
   }
+
+  .footer {
+    gap: 15rem !important;
+    margin-top: 3.1rem;
+  }
+  .footer__data-links .terms {
+    width: 200px;
+  }
+  .footer__data-links .policy {
+    width: 170px;
+  }
+  .footer__data-links .contact {
+    width: 160px;
+  }
 }
 @media only screen and (min-width: 1660px) {
   .header {
@@ -771,6 +854,17 @@ button {
   .presentation__card {
     width: 29rem;
     height: 29rem;
+  }
+
+  .footer {
+    padding-inline: 10rem;
+    gap: 24.5rem !important;
+  }
+  .footer__data {
+    gap: 3rem;
+  }
+  .footer__newsletter input[type=email] {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1800px) {
